@@ -17,7 +17,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmODkzYzEyNy04YmEzLTQyZmEtOTdhMy03NjFmOGVkZjU
 
 let urls = [];
 let subConverter = "subapi.fxxk.dedyn.io"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
-let subConfig = "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/config/mihomo/config.yaml"; //订阅配置文件
+let subConfig = "https://raw.githubusercontent.com/Avrahma/openclash2/refs/heads/main/openclash_auto_speed.ini"; //订阅配置文件
 let subProtocol = 'https';
 
 export default {
