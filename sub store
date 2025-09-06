@@ -49,7 +49,7 @@ sniffer:
 
 ### 策略组
 proxy-groups:
-  - name: 节点选择
+  - name: 时光太浅1994
     type: select
     proxies:
       - 自动选择
@@ -68,10 +68,10 @@ proxy-groups:
     include-all: true
 
 ### 规则集配置（保持原参考文件的订阅规则）
-RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 43200, format: text, proxy: 节点选择}
-RuleSet_domain: &RuleSet_domain {type: http, behavior: domain, interval: 43200, format: text, proxy: 节点选择}
-RuleSet_ipcidr: &RuleSet_ipcidr {type: http, behavior: ipcidr, interval: 43200, format: text, proxy: 节点选择}
-RuleSet_filter: &RuleSet_filter {type: http, behavior: domain, interval: 43200, format: mrs, proxy: 节点选择}
+RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 43200, format: text, proxy: 时光太浅1994}
+RuleSet_domain: &RuleSet_domain {type: http, behavior: domain, interval: 43200, format: text, proxy: 时光太浅1994}
+RuleSet_ipcidr: &RuleSet_ipcidr {type: http, behavior: ipcidr, interval: 43200, format: text, proxy: 时光太浅1994}
+RuleSet_filter: &RuleSet_filter {type: http, behavior: domain, interval: 43200, format: mrs, proxy: 时光太浅1994}
 
 rule-providers:
   fakeip-filter:
@@ -201,27 +201,27 @@ rules:
   - RULE-SET,reject_domainset,REJECT
   - RULE-SET,reject_non_ip_drop,REJECT-DROP
   - RULE-SET,reject_non_ip_no_drop,REJECT
-  - RULE-SET,cdn_domainset,节点选择
-  - RULE-SET,cdn_non_ip,节点选择
-  - RULE-SET,stream_non_ip,节点选择
-  - RULE-SET,telegram_non_ip,节点选择
+  - RULE-SET,cdn_domainset,时光太浅1994
+  - RULE-SET,cdn_non_ip,时光太浅1994
+  - RULE-SET,stream_non_ip,时光太浅1994
+  - RULE-SET,telegram_non_ip,时光太浅1994
   - RULE-SET,apple_cdn,DIRECT
-  - RULE-SET,download_domainset,节点选择
-  - RULE-SET,download_non_ip,节点选择
+  - RULE-SET,download_domainset,时光太浅1994
+  - RULE-SET,download_non_ip,时光太浅1994
   - RULE-SET,microsoft_cdn_non_ip,DIRECT
   - RULE-SET,apple_cn_non_ip,DIRECT
-  - RULE-SET,apple_services,节点选择
-  - RULE-SET,microsoft_non_ip,节点选择
-  - RULE-SET,ai_non_ip,节点选择
-  - RULE-SET,global_non_ip,节点选择
+  - RULE-SET,apple_services,时光太浅1994
+  - RULE-SET,microsoft_non_ip,时光太浅1994
+  - RULE-SET,ai_non_ip,时光太浅1994
+  - RULE-SET,global_non_ip,时光太浅1994
   - RULE-SET,domestic_non_ip,DIRECT
   - RULE-SET,cn,DIRECT
   - RULE-SET,direct_non_ip,DIRECT
   - RULE-SET,lan_non_ip,DIRECT
   - RULE-SET,reject_ip,REJECT
-  - RULE-SET,telegram_ip,节点选择,no-resolve
-  - RULE-SET,stream_ip,节点选择
+  - RULE-SET,telegram_ip,时光太浅1994,no-resolve
+  - RULE-SET,stream_ip,时光太浅1994
   - RULE-SET,lan_ip,DIRECT,no-resolve
   - RULE-SET,domestic_ip,DIRECT
   - RULE-SET,china_ip,DIRECT
-  - MATCH,节点选择
+  - MATCH,时光太浅1994
