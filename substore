@@ -51,9 +51,9 @@ sniffer:
 proxy-groups:
   - name: 🚀时光太浅1994
     type: select
+    include-all: true
     proxies:
       - ♻️自动选择
-      - 🌏手动选择
       - DIRECT
 
   - name: ♻️自动选择
@@ -63,9 +63,6 @@ proxy-groups:
     interval: 300
     tolerance: 100
 
-  - name: 🌏手动选择
-    type: select
-    include-all: true
 
 ### 规则集配置（保持原参考文件的订阅规则）
 RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 43200, format: text, proxy: 🚀时光太浅1994}
