@@ -54,6 +54,7 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动选择
+      - DIRECT
 
   - name: 自动选择
     type: url-test
