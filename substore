@@ -59,8 +59,9 @@ proxy-groups:
   - name: ♻️自动选择
     type: url-test
     include-all: true
+    proxies: []  
     url: "https://cp.cloudflare.com/generate_204"
-    interval: 300
+    interval: 120
     tolerance: 100
 
 
