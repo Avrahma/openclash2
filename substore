@@ -31,12 +31,6 @@ dns:
   nameserver-policy:
     {'rule-set:reject_non_ip,reject_domainset,reject_non_ip_drop,reject_non_ip_no_drop': [rcode://success]}
 
-subscriptions:
-  - name: "Subscription"  # 显示订阅名字
-    update-interval: 3600  # 更新间隔 (秒)
-    expire-time: "2025-12-31"  # 显示过期时间，格式 YYYY-MM-DD
-    total-traffic: "100GB"  # 显示总流量（虚拟设置）
-
 ### 域名嗅探
 sniffer:
   enable: true
